@@ -1,3 +1,4 @@
+/* Tampilan CSS pada PC/Laptop */
 body{  
     padding: 0;
     margin: auto;
@@ -9,44 +10,6 @@ body{
     border-radius: 10px;
 }
 
-
-@media (max-width: 768px) {
- .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.nav-links {
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-.service {
-    flex-direction: column;
-    gap: 16px;
-}
-
-.grid-container {
-    grid-template-columns: 1fr; /* jadi 1 kolom */
-}
-
-.container h1 {
-    font-size: 24px;
-}
-
-.container p {
-    font-size: 14px;
-}
-
-.card {
-    flex-direction: column;
-}
-}
-
-
-
-@media (min-width: 769px) {
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -313,4 +276,45 @@ input[type="text"], textarea, select{
   padding: 0 16px;
   margin-bottom: 10px;
 }
+
+
+/* Tampilan Responsif Pada Layar Hp/Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .service {
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 8px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
