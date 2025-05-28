@@ -1,43 +1,281 @@
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+   body{  
+    padding: 0;
+    margin: auto;
+    color: #333;
+    font-family: sans-serif;
+    background-color: rgba(219, 211, 211, 0.164);
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-    .nav-links {
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 12px;
-    }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #fff;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
 
-    .container, .about-j, .service {
-        padding: 10px;
-        margin: 10px;
-        flex-direction: column;
-    }
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 
-    .grid-container {
-        grid-template-columns: 1fr;
-        padding: 0 8px;
-    }
+}
 
-    .service {
-        flex-direction: column;
-        gap: 20px;
-    }
+.nav-links a:hover{
+    color: blue;
+}
 
-    .card-title {
-        font-size: 1.1rem;
-    }
+.container h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
 
-    .card-text {
-        font-size: 0.9rem;
-    }
+.container{
+    padding: 10px;
+    margin: 16px;
+    color: black;
+}
 
-    .button {
-        font-size: 16px;
-        padding: 8px;
-    }
+.container p {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+
+}
+
+.element{
+    background-color: white;
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.screen{
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.judul{
+    margin-top: 16px;
+    text-align: center;
+    color: black;
+    font-size: 1.15rem;
+}
+
+.subjudul{
+    margin: 10px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.service-action{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0;
+    color: black;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 5px;
+    padding: 8px;
+   
+}
+
+.service-box{
+    text-align: center;
+    background-color: white;
+    color: black;
+    box-shadow: 6px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.service-box p{
+    padding: 8px;
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 6px;
+}
+
+.gear{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item{
+    padding-bottom: 1px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.service-subjudul{
+    padding-top: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.about-j{
+    text-align: left;
+    padding: 16px;
+}
+
+.about-j h3{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-bottom: 2px;
+    color: black;
+}
+
+.isi-judul{
+    text-align: justify;
+    padding-top: 2px;
+    padding-left: 8px;
+    color: black;
+}
+
+table{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.judul-table{
+    text-align: center;
+    background-color: #58c23e;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="text"], textarea, select{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.button{
+    text-align: center;
+    background-color: #57e697;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 4px 0px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #18191a;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+}
+
+.service-text{
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+  padding: 0 16px;
+  margin-bottom: 10px;
+}
 }
 
 
